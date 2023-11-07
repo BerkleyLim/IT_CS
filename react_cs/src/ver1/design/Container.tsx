@@ -1,4 +1,4 @@
-import React, { KeyboardEvent, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Presentation from './Presentation'
 
 // 인터페이스 설정 - 이름
@@ -14,8 +14,6 @@ type AgeInterface = {
 
 // Container 컴포넌트 - 로직 처리
 const Container = () => {
-  // 일반적, 컴포넌트 구현
-  // 처음 배울때, return 안에 있는 건 view단을 출력, return 바깥은 로직 표현
   const [name, setName] = useState<NameInterface>();
   const [age, setAge] = useState<AgeInterface>();
 

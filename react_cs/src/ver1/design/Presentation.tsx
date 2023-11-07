@@ -1,5 +1,3 @@
-import React, { KeyboardEvent, useEffect, useState } from 'react'
-
 // 상속 설정
 type ViewInterface= {
   onNameChange: any,
