@@ -47,8 +47,11 @@ const CustomHookComponent = () => {
   useEffect(() => {
     console.log(name)
     console.log(age)
+  }, [name, age])
+  
+  useEffect(() => {
     console.log(sex)
-  }, [name, age, sex])
+  }, [sex])
 
   return {
     onAgeChange,

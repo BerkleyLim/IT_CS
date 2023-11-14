@@ -1,12 +1,8 @@
-// 상속 설정
-type ViewInterface= {
-  onSexChange: any,
-}
+import CustomHookComponent from "./CustomHookComponent"
 
-// Presentation 컴포넌트
 // View만 처리
-const View2Component = (props:ViewInterface) => {
-  const {onSexChange} = props;
+const View2Component = () => {
+  const {onSexChange} = CustomHookComponent()
 
   return (
     <div>

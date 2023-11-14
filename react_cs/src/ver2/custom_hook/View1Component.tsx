@@ -1,13 +1,8 @@
-// 상속 설정
-type ViewInterface= {
-  onNameChange: any,
-  onAgeChange: any
-}
+import CustomHookComponent from "./CustomHookComponent";
 
-// Presentation 컴포넌트
 // View만 처리
-const View1Component = (props:ViewInterface) => {
-  const {onNameChange, onAgeChange} = props;
+const View1Component = () => {
+  const {onNameChange, onAgeChange} = CustomHookComponent();
 
   return (
     <div>
